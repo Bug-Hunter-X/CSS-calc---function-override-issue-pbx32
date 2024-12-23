@@ -1,0 +1,10 @@
+The CSS property `calc()` is used incorrectly in the following code snippet:
+
+```css
+.element {
+  width: calc(100% - 10px);
+  width: calc(100% - 10px - 2em);
+}
+```
+
+The second `width` property will override the first one, resulting in unexpected behavior.  CSS does not support multiple declarations of the same property within the same selector group. In this case, only the second `width` declaration will be applied.
