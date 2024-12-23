@@ -1,0 +1,9 @@
+The corrected CSS code would be:
+
+```css
+.element {
+  width: calc(100% - 10px - 2em);
+}
+```
+
+This ensures that only one width calculation is applied to the `.element` class.
